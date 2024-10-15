@@ -2,7 +2,7 @@
 
 import { IconButton, Tooltip } from '@mui/material';
 import { useSelector } from 'react-redux';
-import { Brightness4, Brightness7, DarkMode } from '@mui/icons-material';
+import { Brightness7, DarkMode } from '@mui/icons-material';
 
 import { useThemeActions } from '../redux/hooks/useThemeActions';
 import { RootState } from '../redux/store';
