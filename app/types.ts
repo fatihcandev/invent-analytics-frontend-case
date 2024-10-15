@@ -40,10 +40,10 @@ export interface Rating {
   Value: string;
 }
 
-export interface RequestParams extends Record<string, string> {
-  s: string;
-  type: string;
-  y: string;
-  page: string;
-  i: string;
+export interface RequestParams {
+  s?: string;
+  type?: string;
+  y?: string;
+  page?: string;
+  i?: string;
 }
