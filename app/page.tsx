@@ -23,6 +23,7 @@ import {
 import { useDebounce } from 'use-debounce';
 import { useSelector } from 'react-redux';
 import { CalendarMonth, Close, Search } from '@mui/icons-material';
+import Image from 'next/image';
 
 import { searchMovies } from './utils';
 import { RequestParams } from './types';
@@ -128,14 +129,12 @@ const Home = () => {
               alignItems={'center'}
               justifyContent={'space-between'}>
               <Stack direction={'row'} gap={0.5}>
-                <img
+                <Image
                   src={logo.src}
                   alt="logo"
                   width={24}
                   height={24}
-                  style={{
-                    objectFit: 'contain',
-                  }}
+                  objectFit="contain"
                 />
                 <Typography
                   variant="h6"
